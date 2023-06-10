@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <div class="calc_logo">
+      <img src="img/SPLITTER.svg" alt="calculator logo" />
+    </div>
+    <div class="tip_calc">
+      <div class="first_side">
+        <div class="billing">
+          <label for="">Bill</label>
+        </div>
+
+        <input type="number" class="input Bill_input" id="inputBill" />
+
+        <!-- TIP % -->
+        <div class="tip_section">
+          <label for="">Select Tip %</label>
+          <div class="tip">
+            <div class="tips tip5">5%</div>
+            <div class="tips tip10">10%</div>
+            <div class="tips tip15 active_tip">15%</div>
+            <div class="tips tip25">25%</div>
+            <div class="tips tip50">50%</div>
+            <div id="tip_custom">
+              <input
+                type="number"
+                placeholder="CUSTOM"
+                class="tip_custom"
+                id="tip_custom"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="peopleLabel">
+          <label for="">Number of people</label>
+          <label for="" class="error_message">Can't be zero</label>
+        </div>
+        <input type="number" class="input numberofpeople" id="numberofpeople" />
+      </div>
+      <div class="results">
+        <div class="tip-amount">
+          <div class="text">
+            <p>Tip Amount</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="amount" id="tip_value">$4.27</div>
+        </div>
+        <div class="total">
+          <div class="text">
+            <p>Total</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="amount" id="tip_value">$32.79</div>
+        </div>
+        <div class="rest_container"><div class="reset">RESET</div></div>
+      </div>
+    </div>
+  </body>
+</html>

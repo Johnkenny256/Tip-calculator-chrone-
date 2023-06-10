@@ -1,0 +1,25 @@
+@media (max-width: 1000px) {
+  .tip_calc {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .tip_calc {
+    margin: 0;
+    border-radius: 40px 40px 0 0;
+  }
+
+  .first_side {
+    margin-top: 2.4rem;
+  }
+  .tip {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .results {
+    border-radius: 20px;
+  }
+}
